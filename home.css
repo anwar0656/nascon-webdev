@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    background: #f9fafb;
+  }
+  
+  .container {
+    min-height: 100vh;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  .logo img {
+    height: 64px;
+    width: 64px;
+    border-radius: 8px;
+  }
+  .btn-setting a{
+    text-decoration: none;
+    
+  }
+  
+  .nav-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .btn-outline, .btn-primary {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+  
+  .btn-outline {
+    background: transparent;
+    border-color: #3b82f6;
+    color: #3b82f6;
+  }
+  
+  .btn-outline:hover {
+    background: #e0edff;
+  }
+  
+  .btn-primary {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-image: url('https://media.istockphoto.com/id/972918608/photo/kids-learning-inspiration-in-successful-education-with-creative-imagination-for-back-to-school.jpg?s=612x612&w=0&k=20&c=1aXokSroiCL1OkZrEmpsJ6RDeRiLjxsMw0D8-lA340A=');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 800px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 5rem 2rem;
+    background-color: #f0f4f8;
+    text-align: center;
+  }
+  
+  .features h2 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .feature-box {
+    padding: 2rem;
+    border-radius: 1rem;
+    color: #1f2937;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  }
+  
+  .feature-box h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-box.blue {
+    background: #dbeafe;
+  }
+  
+  .feature-box.green {
+    background: #d1fae5;
+  }
+  
+  .feature-box.yellow {
+    background: #fef9c3;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .hero {
+      padding: 3rem 1rem;
+      height: auto;
+    }
+  }
+  
